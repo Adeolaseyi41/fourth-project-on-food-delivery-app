@@ -147,24 +147,42 @@ nav {
 /* right sides of the banner ends */
 /* left sides of the banner */
 .banner2 {
-  display: flex;
+  /* display: flex; */
   width: 400px;
   height: 400px;
   border: 1px solid;
-  gap: 30px;
+  position: relative;
+  /* gap: 30px; */
+}
+.bg_img{
+  background-color: #ff9e0c;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  /* inset: 0; */
+  /* z-index: -1; */
+  border-radius: 90px;
+  mix-blend-mode:multiply;
+}
+
+.banner2_img > img{
+  width: 400px;
+  height: 400px;
+  margin-top: -70px;
+
 }
 .banner2 img {
-  width: 300px;
-  height: 250px;
-  background-color: #ff9e0c;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  margin-top: 30px;
+  /* color: white; */
+  /* background-color: transparent; */
+  /* margin-top: 30px; */
+  /* mix-blend-mode: multiply; */
 }
 .delivery {
   display: flex;
@@ -190,8 +208,9 @@ nav {
   border: 1px solid black;
   width: 300px;
   height: 60px;
-  position: relative;
+  position: absolute;
   margin-top: 20px;
+  right: -50px;
 }
 .location img {
   width: 30px;
@@ -298,7 +317,6 @@ nav {
   display: flex;
   flex-direction: row;
   /* border: 1px solid; */
-  margin: 30px;
   justify-items: space-between;
   align-items: center;
   gap: 100px;
@@ -399,8 +417,8 @@ nav {
   border: 1px solid #11101034;
   box-shadow: 0 1px 0 9px #00000013;
   border-radius: 14px;
-  width: 380px;
-  height: 450px;
+  /* width: 380px; */
+  /* height: 450px; */
   /* padding: 20px; */
   gap: 50px;
 }
